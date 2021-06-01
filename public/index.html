@@ -9,8 +9,33 @@
 </head>
 <body class="container">
 
-    <h1 class="mt-5">Acceso denegado</h1>
+    <H1 class="mt-5">MINICHAT</H1>
+
     <hr>
+
+    <form id="miFormulario">
+        <div class="row">
+           <div class="col-8">
+               <input type="text" id="txtMensaje" placeholder="Mensaje" class="form-control">
+           </div>
+           <div class="col-4">
+               <button type="submit" class="btn btn-primary">
+                   Enviar
+               </button>
+           </div>
+        </div>    
+    </form>
+
+    <div class="row">
+       <div class="col">
+           <ul id="misMensajes" class="mt-2">
+           </ul>
+       </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"
+    integrity="sha512-q/dWJ3kcmjBLU4Qc47E4A9kTB4m3wuTY7vkFJDTZKjTs8jhyGQnaUrxa0Ytd0ssMZhbNua9hE+E7Qv1j+DyZwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
         // Conexión con el socket server
